@@ -2,7 +2,7 @@
 repeat task.wait() until game:IsLoaded()
 local A=Instance.new("ScreenGui")
 if syn and syn.protect_gui then syn.protect_gui(A) A.Parent=game.CoreGui elseif gethui then A.Parent=gethui() else A.Parent=game.CoreGui end
-local B=Instance.new("TextLabel")B.Parent=A;B.BackgroundColor3=Color3.new(1,1,1)B.Position=UDim2.new(0.5,-400,0.5,-100)B.Size=UDim2.new(0,800,0,200)B.Text="รอ โหลดปแปบนึง ไอควาย!"B.TextColor3=Color3.new(0,0,0)B.TextScaled=true B.Font=Enum.Font.GothamBold;B.TextTransparency=1;B.BackgroundTransparency=1
+local B=Instance.new("TextLabel")B.Parent=A;B.BackgroundColor3=Color3.new(1,1,1)B.Position=UDim2.new(0.5,-400,0.5,-100)B.Size=UDim2.new(0,800,0,200)B.Text="รอ_โหลดปแปบนึง ไอควาย!"B.TextColor3=Color3.new(0,0,0)B.TextScaled=true B.Font=Enum.Font.GothamBold;B.TextTransparency=1;B.BackgroundTransparency=1
 for C=1,50,2 do B.TextTransparency=B.TextTransparency-0.02 B.BackgroundTransparency=B.BackgroundTransparency-0.02 task.wait()end
 task.wait(2)
 for D=1,50,2 do B.TextTransparency=B.TextTransparency+0.02 B.BackgroundTransparency=B.BackgroundTransparency+0.02 task.wait()end
