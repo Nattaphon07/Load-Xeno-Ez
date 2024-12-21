@@ -1,0 +1,18 @@
+--[[ Obfuscated Script ]]
+repeat task.wait() until game:IsLoaded()
+local A=Instance.new("ScreenGui")
+if syn and syn.protect_gui then syn.protect_gui(A) A.Parent=game.CoreGui elseif gethui then A.Parent=gethui() else A.Parent=game.CoreGui end
+local B=Instance.new("TextLabel")B.Parent=A;B.BackgroundColor3=Color3.new(1,1,1)B.Position=UDim2.new(0.5,-400,0.5,-100)B.Size=UDim2.new(0,800,0,200)B.Text="SCRIPT LOADED SUCCESSFULLY!"B.TextColor3=Color3.new(0,0,0)B.TextScaled=true B.Font=Enum.Font.GothamBold;B.TextTransparency=1;B.BackgroundTransparency=1
+for C=1,50,2 do B.TextTransparency=B.TextTransparency-0.02 B.BackgroundTransparency=B.BackgroundTransparency-0.02 task.wait()end
+task.wait(2)
+for D=1,50,2 do B.TextTransparency=B.TextTransparency+0.02 B.BackgroundTransparency=B.BackgroundTransparency+0.02 task.wait()end
+A:Destroy()
+print("รอ โหลดปแปบนึง ไอควาย!")
+local function E() setclipboard("No its done not updating anymore")end
+local F=Instance.new("BindableFunction")function F.OnInvoke(G)if G=="Yes"then E()game.StarterGui:SetCore("SendNotification",{Title="Notification",Text="No, why don't you listen",Duration=5})end end
+game.StarterGui:SetCore("SendNotification",{Title="discontinued",Text="Disabled gone no more updates",Duration=5,Callback=F,Button1="Yes",Button2="No"})
+task.wait(5)
+local function H() setclipboard("https://discord.gg/b29YARDT8P")end
+local I=Instance.new("BindableFunction")function I.OnInvoke(J)if J=="Yes"then H()game.StarterGui:SetCore("SendNotification",{Title="Sirmemes youtube",Text="Copying of Sirmemes youtube successful",Duration=5})end end
+game.StarterGui:SetCore("SendNotification",{Title="Sirmemes youtube",Text="Copy to clipboard?",Duration=5,Callback=I,Button1="Yes",Button2="No"})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Nattaphon07/XENO-EZ/refs/heads/main/XENO-EZ",true))()
